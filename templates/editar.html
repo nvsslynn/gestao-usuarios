@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Gestão</title>
+</head>
+<body>
+    <div class="upbar">
+        <h1>Gestão de usuários</h1>
+    </div>
+
+    <div class="centerized">
+        <form action="#" method="post" class="form">
+            <div class="mb-10">
+                <h1>Editar usuário</h1>
+            </div>
+            
+            <div class="mb-10">
+                <label for="idu">ID:</label><br>
+                <input type="number" name="idu" id="idu" placholder="ID">
+            </div>
+
+            <div class="mb-10">
+                <label for="nome">Nome:</label><br>
+                <input type="text" name="nome" id="nome" placeholder="John Doe" class="keyin">
+            </div>
+
+            <div class="mb-10">
+                <label for="email">E-mail:</label><br>
+                <input type="email" name="email" id="email" placeholder="johnDoe@email.net" class="keyin">
+            </div>
+
+            <div class="">
+                <input type="submit" value="Edita" class="btn">
+            </div>
+        </form>
+    </div>
+
+    {% include "elements/returnbtn.html" %}
+</body>
+</html>

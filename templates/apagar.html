@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Gestão</title>
+</head>
+<body>
+    <div class="upbar">
+        <h1>Gestão de usuários</h1>
+    </div>
+        
+    <div class="centerized">
+        <form action="#" method="post">
+            <div class="mb-10">
+                <label for="idu">ID:</label>
+                <input type="number" name="idu" id="idu"><br>
+            </div>
+
+            <input type="submit" value="Apagar">
+        </form>
+    </div>
+
+    {% include "elements/returnbtn.html" %}
+</body>
+</html>

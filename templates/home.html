@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Gestão</title>
+</head>
+<body>
+    <div class="upbar">
+        <h1>Gestão de usuários</h1>
+    </div>
+
+    <div class="nav">
+        <a class="btn" href="{{ url_for('panelcriar') }}">Criar</a>
+        <a class="btn" href="{{ url_for( 'panelapagar') }}">Apagar</a>
+        <a class="btn" href="{{ url_for('paneleditar') }}">Editar</a>
+        <a class="btn" href="{{ url_for('panelver') }}">Ver</a>
+    </div>
+</body>
+</html>
